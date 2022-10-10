@@ -28,7 +28,7 @@ public class MP1 {
 		number = myScanner.nextInt();
 		myScanner.nextLine();
 		
-		do {
+		while (number != rand) {
 			
 			if (number < rand) {
 				System.out.println("Number to low, guess higher!");
@@ -42,7 +42,7 @@ public class MP1 {
 				myScanner.nextLine();
 				count++;
 			}
-		} while (number != rand);
+		}
 
 		System.out.println("Your guess was right! You had " + count + " guesses.");
 
